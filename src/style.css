@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;600&display=swap');
+
+@import "tailwindcss";
+
+@layer base{
+    .tittle-font{
+        font-family: 'Cinzel Decorative', serif;
+    }
+    .font-body{
+        font-family: 'Inter', sans-serif;
+    }
+    .font-color{
+        color: #78350f;
+    }
+    .bg-container{
+        background-color:#D2B48C;
+    }
+
+    .borderLine{
+        border-color:#3B2F2F ;
+    }
+     .card-texture{
+        border: 8px #3B2F2F solid;
+        box-shadow: 0 4px 6px -1px #8b5e3c,
+                    0 2px 4px -1px #8b5e3c;
+        transition: transform 0.5s ease-in-out;
+        transition-property:all;
+    }
+}
+
+@layer utilities{
+
+    .wood-texture{
+        background-image: url('../src/assets/texture/textura-boton.png');
+        background-size: cover;
+    }
+
+    .old-wood-texture{
+        background-image: url('../src/assets/texture/maderavieja.jpg');
+        background-size: cover;
+    }
+
+    .paper-texture{
+        background-image: url('/src/assets/texture/papertexture.png');
+        background-size: cover;
+    }
+
+    .menu-icon {
+        width: 3rem;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .no-spinner::-webkit-inner-spin-button,.no-spinner::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+     .bg-panel{
+        background-image: url('../src/assets/texture/panel2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+   
+}
