@@ -1,9 +1,9 @@
 <?php
 
-$servidor="localhost";
+$servidor="127.0.0.1";
 $usuario="root";
 $contraseña="";
-$base_datos="TreasurePath_1";
+$base_datos="treasurepath";
 $port=3306;
 
 

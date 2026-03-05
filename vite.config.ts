@@ -10,7 +10,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target:'http://localhost/tfg/TreasurePath/server',
+        target:'http://localhost/treasurepath/TreasurePath/server',
         changeOrigin: true,
         secure: false,
         rewrite: path => path.replace(/^\/api/, ''),
