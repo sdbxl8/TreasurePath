@@ -37,7 +37,7 @@
 
         <div class="grid grid-cols-2 gap-10">
 
-       <div class="h-80 w-110  rounded-2xl flex justify-center items-center relative shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
+       <div class="h-80 w-110 rounded-2xl flex justify-center items-center relative shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
 
             <button @click="togglePopup" class="absolute right-3 top-3 text-yellow-950 cursor-pointer"><circlePlus/></button>
 

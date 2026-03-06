@@ -7,6 +7,7 @@ import historial from '../components/landingPageComponents/historial.vue';
 import metas from '../components/landingPageComponents/metas.vue';
 import card from '../components/landingPageComponents/card.vue'
 import mainPage from '../components/landingPageComponents/mainPage.vue';
+import graphics from '../components/landingPageComponents/graphics.vue';
 
 
 const router=createRouter({
@@ -34,6 +35,8 @@ const router=createRouter({
             {path:"inicio",component:mainPage},
             {path:"historial", component:historial},
             {path:"metas", component:metas},
+            {path:"graphics", component:graphics},
+            
         ],
     },
 ]
