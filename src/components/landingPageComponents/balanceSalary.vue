@@ -33,8 +33,7 @@
 </script>
 <template>
 
-    <section class="flex justify-center items-center">
-
+    <section>
         <div class="grid grid-cols-2 gap-10">
 
        <div class="h-80 w-110 rounded-2xl flex justify-center items-center relative shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
@@ -81,12 +80,3 @@
     
 
 </template>
-
- <style scoped>
-   .bg-map{
-    background-image: url(../../assets/texture/fondo-recuadro.jpg);
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: inherit;
-    }
-</style>

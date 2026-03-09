@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 
+
 @layer base{
     .tittle-font{
         font-family: 'Cinzel Decorative', serif;

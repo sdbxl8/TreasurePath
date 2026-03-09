@@ -21,8 +21,8 @@ const{nombreUsuario,logOut}= useLogOut();
             <div class="flex justify-center items-center gap-3 p-10">
                 <img src="../../assets/texture/piratas.png" alt="logo user" class="h-10 w-10">
                 <button @click="togglePopup" class="text-lg tittle-font uppercase cursor-pointer">{{nombreUsuario}}</button>
-                <div v-show="popupVisible" class="bg-white rounded-2xl absolute right-3 top-12 h-16 w-40 flex justify-center items-center gap-3">
-                    <span class="tittle-font uppercase text-black">cerrar sesion</span>
+                <div v-show="popupVisible" class="bg-white rounded-2xl absolute right-3 top-18 h-16 w-40 flex justify-between items-center p-4">
+                    <span class="tittle-font w-10 uppercase text-black">cerrar sesion</span>
                     <button @click="logOut" class="cursor-pointer h-8 w-8 flex items-center justify-center hover:scale-105"> <closeSession/></button>           
                 </div>
             </div>
