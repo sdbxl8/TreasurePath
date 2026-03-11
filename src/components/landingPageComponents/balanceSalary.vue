@@ -1,7 +1,4 @@
 <script setup lang="ts">
-    // import graphics from './graphics.vue';
-    // import mostrarMeta from './mostrarMeta.vue';
-    // import circlePlus from '../../assets/icons/circlePlus.vue';
     import exit from '../../assets/icons/exit.vue';
     import { usePopup } from '../../composables/usePopup';
     import CirclePlus from '../../assets/icons/circlePlus.vue';

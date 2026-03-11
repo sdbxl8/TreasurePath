@@ -1,7 +1,8 @@
-import router from "../router/router";
 import {ref,onMounted} from 'vue'
+import { useRouter } from 'vue-router'
 
 export function useLogOut(){
+    const router = useRouter();
     
     const logOut = async () =>{
     try{

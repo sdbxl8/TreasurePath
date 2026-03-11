@@ -8,7 +8,9 @@
         <headerPage />
         <main class="flex justify-center items-center"> 
             <leftMenu/>
+            <div class="flex items-center justify-center p-5 wood-texture w-[85%] h-[90%] rounded-2xl shadow-2xl shadow-black">
             <router-view />
+            </div>
         </main>
         <footerPage/>
     </div>
