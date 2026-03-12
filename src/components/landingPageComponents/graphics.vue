@@ -9,7 +9,7 @@ const {chartData,chartOptions}=useGrapichs();
 </script>
 
 <template>
-    <div class="h-80 w-110 bg-amber-500 flex items-center justify-center p-2">
-        <Bar  :data="chartData" :options="chartOptions"/>
+    <div class="w-full max-w-3xl h-64 md:h-96 bg-amber-500 flex items-center justify-center p-2 rounded-2xl">
+        <Bar class="w-full h-full" :data="chartData" :options="chartOptions"/>
     </div>
 </template>
