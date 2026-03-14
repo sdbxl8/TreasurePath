@@ -22,10 +22,10 @@ const{nombreUsuario,logOut}= useLogOut();
         </div>
 
         <nav class="flex  h-20 lg:h-100 w-full items-center justify-between md:flex-col gap-4">
-            <router-link to="/homePage/graphics" class="flex items-center justify-center gap-3 w-full p-3 rounded-2xl hover:bg-amber-100 hover:text-black transition">
+            <!-- <router-link to="/homePage/graphics" class="flex items-center justify-center gap-3 w-full p-3 rounded-2xl hover:bg-amber-100 hover:text-black transition">
                 <graphics class="h-8 w-8" />
                 <span class="hidden md:inline tittle-font">Gráficas</span>
-            </router-link>
+            </router-link> -->
             <router-link to="/homePage/inicio" class="flex items-center justify-center gap-3 w-full p-3 rounded-2xl hover:bg-amber-100 hover:text-black transition">
                 <img src="../../assets/texture/brujula.png" alt="" class="h-8 w-8" />
                 <span class="hidden md:inline tittle-font">Inicio</span>
@@ -49,8 +49,8 @@ const{nombreUsuario,logOut}= useLogOut();
                 </button>
             </div>
 
-            <div v-show="popupVisible" class=" w-full wood-texture rounded-2xl z-50 overflow-hidden">
-                <div class="bg-amber-100 p-3 flex items-center justify-center gap-5">
+            <div v-show="popupVisible" class="w-full rounded-2xl z-50 overflow-hidden">
+                <div class="bg-amber-100 p-3 flex items-center justify-center gap-3">
                     <span class="tittle-font uppercase text-yellow-900 hover:text-yellow-700 cursor-pointer">cerrar sesion</span>
                     <button @click="logOut" class="cursor-pointer h-8 w-8 flex items-center justify-center hover:scale-105"><closeSession /></button>
                 </div>

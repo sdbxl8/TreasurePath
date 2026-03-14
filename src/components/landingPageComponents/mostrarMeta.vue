@@ -20,7 +20,7 @@
 </script>
 
 <template>
-       <div class="h-80 w-110 rounded-2xl flex flex-col gap-5 items-center justify-start overflow-y-hidden absolute">
+       <div class=" h-180 w-80 rounded-2xl flex flex-col gap-5 items-center justify-center m-8 bg-amber-700 overflow-y-hidden">
 
 
             <div v-show="popupVisible"  class="h-180 w-150 absolute z-50 top-1/8 left-1/2 transform -translate-x-1/2 bg-red-800 rounded-2xl flex flex-col items-center justify-center p-5">

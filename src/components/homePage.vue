@@ -7,10 +7,9 @@
         <menuAside class="md:row-span-2 lg:w-auto" />
 
         <main class="w-full h-full bg-gradient-to-b from-[#ccbc9e] via-[#d4ccbb] to-[#ecd6c1]">
-            <!-- <router-view class="w-full h-full" /> -->
-        <footerPage class="md:col-start-2" />
+            <router-view class="w-full h-full flex items-center justify-center" />
         </main>
-
+            <footerPage class="md:col-start-2" />
     </div>
 </template>
 
