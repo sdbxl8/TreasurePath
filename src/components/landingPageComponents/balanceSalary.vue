@@ -29,8 +29,9 @@
     
 </script>
 <template>
-    <section class="w-full h-80 flex justify-between itmes-center gap-5 bg-red-500">
+    <section class="w-full h-40">
 
+        <div class="flex justify-between itmes-center gap-5 p-3">           
             <div class="bg-amber-200 rounded-2xl flex flex-col justify-center items-center relative shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
                 <button @click="togglePopup" class="absolute right-3 top-3 text-yellow-950 cursor-pointer"><circlePlus/></button>
 
@@ -71,5 +72,6 @@
                     <p class="text-2xl text-yellow-950">{{ porcentajeAhorro }} %</p>
                 </div>
             </div>
+        </div>
     </section>
 </template>
