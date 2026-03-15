@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import xCircle from '../../assets/icons/xCircle.vue';
     import circlePlus from '../../assets/icons/circlePlus.vue';
-    import tick from '../../assets/icons/tick.vue';
+    // import tick from '../../assets/icons/tick.vue';
     import chest from '../../assets/icons/chest.vue';
 
     import exit from '../../assets/icons/exit.vue';
@@ -13,7 +13,7 @@
 
     const {
         meta,
-        metaCompletada,
+        // metaCompletada,
         cargarMeta,
         calcularProgreso,
         descripcion,
@@ -29,12 +29,14 @@
 </script>
 <template>
 
-    <div class="w-full max-w-5xl mx-auto px-4 py-6 flex flex-col lg:flex-row gap-6">
-        <section class="w-full lg:w-1/2 flex flex-col p-5 paper-texture rounded-2xl relative">
-            <div class="flex items-center justify-between gap-3">
-                <div class="flex items-center gap-3">
+    <div class="w-full p-4 h-full flex flex-col justify-center items-center lg:flex-row gap-6">
+
+        <section class="h-full w-full lg:w-1/2 flex flex-col p-5 rounded-2xl relative">
+
+            <div class="flex items-center justify-center gap-3">
+                <div class="flex justify-center items-center gap-3">
                     <h2 class="tittle-font text-2xl uppercase font-bold">Metas activas</h2>
-                    <img src="../../assets/texture/brujula.png" class="h-10 w-10" alt="brújula" />
+                    <!-- <img src="../../assets/texture/brujula.png" class="h-10 w-10" alt="brújula" /> -->
                 </div>
                 <button @click="togglePopup" class="cursor-pointer"><circlePlus /></button>
             </div>
@@ -71,7 +73,7 @@
             </div>
         </section>
 
-        <section class="w-full lg:w-1/2 flex flex-col p-5 paper-texture rounded-2xl">
+        <!-- <section class="w-full lg:w-1/2 flex flex-col p-5 paper-texture rounded-2xl">
             <div class="flex items-center justify-center gap-3 mb-4">
                 <h1 class="tittle-font uppercase text-2xl text-center">Metas completadas</h1>
                 <img src="../../assets/texture/brujula.png" class="h-10 w-10" alt="brújula" />
@@ -86,7 +88,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
 
 </template>

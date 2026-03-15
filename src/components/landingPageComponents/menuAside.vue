@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import closeSession from '../../assets/icons/closeSession.vue';
-import graphics from '../../assets/icons/graphics.vue';
+// import graphics from '../../assets/icons/graphics.vue';
 import { useLogOut } from '../../composables/useLogOut';
 import { usePopup } from '../../composables/usePopup';
 import leftArrow from '../../assets/icons/leftArrow.vue';

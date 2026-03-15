@@ -28,20 +28,17 @@
        <div class="wood-texture rounded-2xl flex justify-center items-center shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700 p-6">
             <div class="flex flex-col items-center justify-center gap-5 relative">
                 <button @click="togglePopup" class="cursor-pointer absolute top-0 right-0"><arrowMax/></button>
-                 <!-- <router-link to="/homePage/historial">
-                    <button @click="togglePopup" class="cursor-pointer absolute top-0 right-0"><arrowMax/></button> 
-                 </router-link> -->
                 <h3 class="tittle-font text-3xl text-yellow-950">Ingresos totales</h3>
                 <p class="text-2xl text-green-700">{{ totalIngreso }} €</p>
             </div>               
         </div>
 
-        <div v-show="popupVisible"  class="h-180 w-300 absolute z-50 top-1/8 left-1/2 transform -translate-x-1/2 wood-texture rounded-2xl flex flex-col items-center justify-center p-5">
-            <button @click="togglePopup" class="absolute right-6 top-2 rotate-45 hover:rotate-0 transition-all ease-in-out duration-700 cursor-pointer"><exit/></button>
-            <div class="flex flex-col gap-4">
-                <div class="flex items-center justify-between">
+        <div v-show="popupVisible"  class="h-180 w-210 absolute z-50 top-1/8 left-1/2 transform -translate-x-1/2 wood-texture rounded-2xl flex flex-col items-center justify-center p-5">
+            <button @click="togglePopup" class="h-2 w-2 absolute right-4 top-2 rotate-45 hover:rotate-0 transition-all ease-in-out duration-700 cursor-pointer"><exit/></button>
+            <div class="flex flex-col gap-4 bg-amber-200 h-full w-full rounded-2xl p-5">
+                <div class="flex items-center justify-center gap-3 relative">
                     <h3 class="tittle-font text-2xl uppercase">Ingresos</h3>
-                    <button @click="toggleIngreso" class="cursor-pointer"><circlePlus /></button>
+                    <button @click="toggleIngreso" class="cursor-pointer absolute top-0 right-0"><circlePlus /></button>
 
                     <div v-show="ingresoVisible" class="absolute inset-x-4 top-16 z-50 bg-white/90 rounded-2xl p-4 shadow-lg">
                         <form @submit.prevent="añadirIngreso" class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -50,8 +47,8 @@
                             <button type="submit" class="border-2 borderLine wood-texture font-color cursor-pointer hover:scale-105 transition-all ease-in-out duration-700"><chest/></button>
                         </form>
                     </div>
-
                 </div>
+
                 <div class="space-y-3 max-h-[55vh] overflow-y-auto">
                     <div v-for="(item,index) in ingreso" :key="index" class="grid grid-cols-3 gap-2 items-center bg-white/70 rounded-xl p-3">
                         <div class="text-sm font-medium">{{ item.descripcion }}</div>

@@ -55,7 +55,7 @@
                 </div>
             </section>
 
-            <section class="relative w-full lg:w-1/2 bg-book rounded-2xl p-4">
+            <section class="relative w-full lg:w-1/2 bg-amber-400 rounded-2xl p-4">
                 <button @click="toggleGasto" class="absolute right-4 top-4 z-50 rotate-45 hover:rotate-0 transition-all duration-700 cursor-pointer"><exit/></button>
                 <div v-show="gastoVisible" class="absolute inset-x-4 top-16 z-50 bg-white/90 rounded-2xl p-4 shadow-lg">
                     <form @submit.prevent="añadirGasto" class="flex flex-col sm:flex-row items-center justify-center gap-4">
