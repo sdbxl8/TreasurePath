@@ -21,11 +21,11 @@ const{nombreUsuario,logOut}= useLogOut();
             </div>
         </div>
 
-        <nav class="flex  h-20 lg:h-100 w-full items-center justify-between md:flex-col gap-4">
-            <!-- <router-link to="/homePage/graphics" class="flex items-center justify-center gap-3 w-full p-3 rounded-2xl hover:bg-amber-100 hover:text-black transition">
+        <!-- <nav class="flex  h-20 lg:h-100 w-full items-center justify-between md:flex-col gap-4">
+            <router-link to="/homePage/graphics" class="flex items-center justify-center gap-3 w-full p-3 rounded-2xl hover:bg-amber-100 hover:text-black transition">
                 <graphics class="h-8 w-8" />
                 <span class="hidden md:inline tittle-font">Gráficas</span>
-            </router-link> -->
+            </router-link>
             <router-link to="/homePage/inicio" class="flex items-center justify-center gap-3 w-full p-3 rounded-2xl hover:bg-amber-100 hover:text-black transition">
                 <img src="../../assets/texture/brujula.png" alt="" class="h-8 w-8" />
                 <span class="hidden md:inline tittle-font">Inicio</span>
@@ -38,7 +38,7 @@ const{nombreUsuario,logOut}= useLogOut();
                 <img src="../../assets/texture/map-removebg-preview.png" alt="" class="h-8 w-8" />
                 <span class="hidden md:inline tittle-font">Metas</span>
             </router-link>
-        </nav>
+        </nav> -->
 
         <div class="mt w-full">
             <div class="flex items-center justify-between gap-3 p-4 wood-texture rounded-2xl hover:shadow-black hover:shadow-2xl hover:scale-105 transition-all duration-700">

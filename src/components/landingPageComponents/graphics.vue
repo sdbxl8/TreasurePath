@@ -7,13 +7,13 @@ const { chartData, chartOptions } = useGrapichs();
 </script>
 
 <template>
-  <div class="w-full h-120 flex items-center justify-center p-4 sm:p-6">
+  <div class="w-full h-100 flex items-center justify-center p-4 sm:p-6">
     <div class="w-full bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
       <Bar 
         class="w-full" 
         :data="chartData" 
         :options="chartOptions"
-        :style="{ minHeight: 'clamp(250px, 50vh, 500px)' }"
+        :style="{ minHeight: 'clamp(20rem, 20vh, 50rem)' }"
       />
     </div>
   </div>
