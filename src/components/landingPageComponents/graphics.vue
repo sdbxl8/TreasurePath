@@ -7,8 +7,8 @@ const { chartData, chartOptions } = useGrapichs();
 </script>
 
 <template>
-  <div class="w-full h-100 flex items-center justify-start p-4 m-5 sm:p-6">
-    <div class="h-120 w-260 m-8 bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
+  <div class="w-full flex items-center justify-center p-4 sm:p-6">
+    <div class="h-120 w-280 m-4 bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
       <Bar 
         class="w-full" 
         :data="chartData" 

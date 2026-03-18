@@ -6,13 +6,13 @@
 
 </script>
 <template>
-    <section class="w-full h-40  m-5">
+    <section class="w-full h-20 m-5">
 
-        <div class="flex justify-between items-center gap-5 p-3">              
+        <div class="grid grid-cols-4 gap-5 p-3">              
             <saldo/>
-            <ahorro/>
-            <totalIngreso/>
-            <totalGastos/>
+            <ahorro />
+            <totalIngreso />
+            <totalGastos />
         </div>
     </section>
 </template>
