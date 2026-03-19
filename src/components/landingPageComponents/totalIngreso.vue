@@ -36,7 +36,7 @@
 
         <div v-show="popupVisible"  class="h-180 w-210 absolute z-50 top-1/8 left-1/2 transform -translate-x-1/2 wood-texture rounded-2xl flex flex-col items-center justify-center p-8">
             <button @click="togglePopup" class="h-2 w-2 absolute right-4 top-2 rotate-45 hover:rotate-0 transition-all ease-in-out duration-700 cursor-pointer"><exit/></button>
-            <div class="flex flex-col gap-4 bg-amber-200 h-full w-full rounded-2xl p-5">
+            <div class="flex flex-col gap-4 bg- h-full w-full rounded-2xl p-5">
                 <div class="flex items-center justify-center gap-3 relative">
                     <h3 class="tittle-font text-2xl uppercase">Ingresos</h3>
                     <button @click="toggleIngreso" class="cursor-pointer absolute top-0 right-0"><circlePlus /></button>
