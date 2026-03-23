@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <div class="wood-texture rounded-2xl flex flex-col justify-center items-center relative shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
+    <div class="bg-white rounded-2xl flex flex-col justify-center items-center relative shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
                 <button @click="togglePopup" class="absolute right-3 top-3 text-yellow-950 cursor-pointer"><circlePlus/></button>
 
                 <div v-show="popupVisible" class="h-20 w-full absolute z-50 top-0 left-1/2 transform -translate-x-1/2 bg-amber-200 rounded-2xl flex flex-col items-center justify-center p-5">
@@ -33,8 +33,8 @@
                 </div>
 
                 <div class=" rounded-2xl flex flex-col items-center justify-center gap-5 p-6">
-                    <span class="text-4xl text-white font-extrabold">{{ saldo }} €</span>
-                    <h3 class="tittle-font text-xl text-orange-900">Saldo actual</h3>
+                    <span class="text-5xl text-yellow-900 font-extrabold">{{ saldo }} €</span>
+                    <h3 class="tittle-font text-xl text-yellow-900">Saldo actual</h3>
                 </div>
             </div>
 </template>

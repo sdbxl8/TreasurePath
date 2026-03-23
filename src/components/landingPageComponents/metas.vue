@@ -41,7 +41,7 @@
                 <button @click="togglePopup" class="cursor-pointer absolute top-2 right-2"><circlePlus /></button>
             </div>
 
-            <div v-show="popupVisible" class="h-full w-full relative top-0 z-50 bg-panel rounded-2xl">
+            <div v-show="popupVisible" class="h-30 w-full absolute z-50 top-0 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl flex flex-col items-center justify-center p-5">
                 <button @click="togglePopup" class="absolute right-4 top-3 rotate-45 hover:rotate-0 transition-all duration-700 cursor-pointer"><exit /></button>
                 <form @submit.prevent="añadirMeta" class="flex flex-col sm:flex-row items-center justify-center gap-2">
                     <input v-model="descripcion" class="bg-transparent h-10 w-full sm:w-40 border-b-3 p-2 outline-none text-center" type="text" placeholder="Descripción">

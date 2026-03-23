@@ -12,15 +12,3 @@
             <footerPage class="md:col-start-2" />
     </div>
 </template>
-
-<!-- <style scoped>
-.bg-app{
-    background-image: url("../assets/texture/fondo-recuadro.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-</style> -->
-
-<!-- bg-gradient-to-b from-[#0e0300] via-[#160f01] to-[#160b01] -->

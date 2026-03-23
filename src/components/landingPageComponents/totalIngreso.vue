@@ -26,11 +26,11 @@
 
 <template>
 
-       <div class="wood-texture rounded-2xl flex justify-center items-center shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
+       <div class="bg-white rounded-2xl flex justify-center items-center shadow-2xl shadow-black hover:scale-105 hover:shadow-lg transition-all ease-in-out duration-700">
             <div class="flex flex-col items-center justify-center gap-5 relative h-full w-full">
                 <button @click="togglePopup" class="cursor-pointer absolute top-2 right-2"><arrowMax/></button>
-                <p class="text-4xl text-green-700 font-extrabold">{{ totalIngreso }} €</p>
-                <h3 class="tittle-font text-xl text-yellow-950">Ingresos totales</h3>
+                <p class="text-5xl text-green-700 font-extrabold">{{ totalIngreso }} €</p>
+                <h3 class="tittle-font text-xl text-yellow-900">Ingresos totales</h3>
             </div>               
         </div>
 

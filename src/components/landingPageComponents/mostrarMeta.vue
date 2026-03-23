@@ -31,7 +31,7 @@
 </script>
 
 <template>
-       <div class="h-full rounded-2xl flex flex-col gap-2 items-center justify-center wood-texture overflow-x-hidden  shadow-black shadow-2xl m-2 transition-all duration-700">
+       <div class="h-full rounded-2xl flex flex-col gap-2 items-center justify-start wood-texture overflow-x-hidden  shadow-black shadow-2xl m-2 transition-all duration-700 p-1">
 
             <div v-show="popupVisible"  class="h-180 w-300 absolute z-50 top-1/8 left-1/2 transform -translate-x-1/2 wood-texture rounded-2xl flex items-center justify-center p-5"> 
                 <metas class="h-full w-full"/> 

@@ -1,5 +1,133 @@
-# Vue 3 + TypeScript + Vite
+# 🏴‍☠️ TreasurePath
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**TreasurePath** es una aplicación web de gestión de finanzas personales orientada a usuarios principiantes.
+Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visual intuitiva con temática pirata.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+## 🚀 Demo
+
+⚠️ Actualmente en desarrollo (UI en proceso de rediseño en rama `ui-redisin`)
+
+
+
+## 📸 Capturas de pantalla
+
+*Añade aquí tus capturas actualizadas del dashboard, gráficos y gestión de metas*
+
+## 🛠️ Tecnologías utilizadas
+
+### Frontend
+
+* Vue 3
+* TypeScript
+* TailwindCSS
+* Vue Router
+* Chart.js
+
+### Backend
+
+* PHP
+* MySQL
+
+### Herramientas
+
+* Vite
+* XAMPP
+* MySQL Workbench
+* Visual Studio Code
+
+
+## ⚙️ Instalación y uso
+
+### 1. Clonar el repositorio
+
+git clone https://github.com/sdbxl8/TreasurePath.git
+cd TreasurePath
+
+
+### 2. Cambiar a la rama de desarrollo (UI actual)
+
+
+git checkout ui-redisin
+
+### 3. Instalar dependencias
+
+
+npm install
+
+
+### 4. Configurar entorno local
+
+* Iniciar **Apache** y **MySQL** desde XAMPP
+* Acceder a **phpMyAdmin**
+
+
+
+### 5. Importar la base de datos
+
+* Crear una base de datos (por ejemplo: `treasurepath`)
+* Importar el archivo:
+
+database/treasurepath.sql
+
+### 6. Ejecutar la aplicación
+
+
+'npm run dev'
+
+
+Abrir el enlace proporcionado en la terminal.
+
+
+## 🧠 Objetivo del proyecto
+
+El objetivo de TreasurePath es facilitar la gestión financiera personal a usuarios sin experiencia, proporcionando una herramienta sencilla, visual y accesible para el control de ingresos, gastos y metas de ahorro.
+
+---
+
+## 📊 Funcionalidades
+
+* Registro e inicio de sesión de usuarios
+* Gestión de sesiones
+* Registro de ingresos y gastos
+* Visualización de balance y estadísticas
+* Sistema de metas con seguimiento de progreso
+
+---
+
+## 🧪 Pruebas realizadas
+
+* Pruebas funcionales basadas en casos de uso
+* Pruebas de interfaz de usuario
+* Pruebas de seguridad
+* Pruebas de rendimiento
+
+---
+
+## 🧠 Aprendizajes
+
+* Desarrollo de aplicaciones SPA con Vue 3
+* Uso de TypeScript para tipado seguro
+* Integración frontend-backend
+* Diseño y gestión de bases de datos relacionales
+* Implementación de gráficos dinámicos con Chart.js
+* Mejora de UI/UX mediante iteración y rediseño
+
+---
+
+## 📈 Futuras mejoras
+
+* 🌐 Despliegue en servidor real
+* 📱 Versión móvil
+* ⚙️ Personalización avanzada
+* 📊 Estadísticas más completas
+* 🔗 Integración bancaria
+
+## 👨‍💻 Autor
+
+Salvador Domínguez Bandera
+
+## 📌 Estado del proyecto
+
+🚧 Proyecto en desarrollo (rediseño de interfaz en progreso)
+✅ Versión funcional disponible en entorno local
