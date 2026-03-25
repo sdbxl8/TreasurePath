@@ -8,7 +8,7 @@ const { chartData, chartOptions } = useGrapichs();
 
 <template>
   <div class="w-full flex items-center justify-center p-4 sm:p-6">
-    <div class="h-120 w-280 m-4 bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
+    <div class="h-120 w-260 m-4 bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100 flex items-center justify-center">
       <Bar 
         class="w-full" 
         :data="chartData" 
@@ -18,28 +18,3 @@ const { chartData, chartOptions } = useGrapichs();
     </div>
   </div>
 </template>
-
-<!-- <style scoped>
-/* Animación suave al cargar */
-div {
-  animation: fadeIn 0.5s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 640px) {
-  :deep(.chartjs-tooltip) {
-    font-size: 12px;
-  }
-}
-</style> -->

@@ -65,7 +65,6 @@ npm install
 
 ### 5. Importar la base de datos
 
-* Crear una base de datos (por ejemplo: `treasurepath`)
 * Importar el archivo:
 
 database/treasurepath.sql
