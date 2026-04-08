@@ -14,6 +14,9 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 
 *Añade aquí tus capturas actualizadas del dashboard, gráficos y gestión de metas*
 
+* pantalla de inicio de sesión.
+    ![loging] (../../src/assets/screenshot/login.png) 
+
 ## 🛠️ Tecnologías utilizadas
 
 ### Frontend

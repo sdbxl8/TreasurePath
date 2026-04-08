@@ -1,9 +1,7 @@
 <script setup lang="ts">
     import xCircle from '../../assets/icons/xCircle.vue';
     import circlePlus from '../../assets/icons/circlePlus.vue';
-    // import tick from '../../assets/icons/tick.vue';
     import chest from '../../assets/icons/chest.vue';
-
     import exit from '../../assets/icons/exit.vue';
     import { usePopup } from '../../composables/usePopup';
     import {useMeta} from '../../composables/useMeta';
@@ -13,7 +11,6 @@
 
     const {
         meta,
-        // metaCompletada,
         cargarMeta,
         calcularProgreso,
         descripcion,

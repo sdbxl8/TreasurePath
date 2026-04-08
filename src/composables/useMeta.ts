@@ -119,6 +119,7 @@ export function useMeta(){
 
             if(data.status === "success"){
                 reset();
+                await cargarMeta(); 
                 alert('añadido con exito');
             } else{
                 alert('fallo al añadir')

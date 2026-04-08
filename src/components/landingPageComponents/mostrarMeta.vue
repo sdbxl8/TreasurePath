@@ -4,29 +4,25 @@
     import arrowMax from '../../assets/icons/arrowMax.vue';
     import exit from '../../assets/icons/exit.vue';
     import {useMeta} from '../../composables/useMeta';
-    import { onMounted } from 'vue';
+    import { onMounted, watch } from 'vue';
     import { usePopup } from '../../composables/usePopup';
     import metas from './metas.vue';
-    const {
-        // meta,
-        metaCompletada,
-        cargarMeta,
-        // calcularProgreso,
-        // descripcion,
-        // cantidad,
-        // añadirMeta,
-        // completarMeta
-    } = useMeta();
+
+    const {metaCompletada,cargarMeta} = useMeta();
+
+    // onMounted(()=>{
+    //     cargarMeta();
+    // })
+
+    const {popupVisible,togglePopup} = usePopup();
 
     onMounted(()=>{
         cargarMeta();
     })
-
-    const {popupVisible,togglePopup} = usePopup();
-
-
-    onMounted(()=>{
-        cargarMeta();
+    watch(popupVisible, (newVal) => {
+        if (newVal) {
+            cargarMeta();
+        }
     })
 </script>
 
