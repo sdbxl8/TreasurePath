@@ -13,15 +13,15 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 ## 📸 Capturas de pantalla
 
 ### Inicio de sesión.
-    ![login](screenshot/login.png) 
+![login](screenshot/login.png) 
 ### Página de Registro.
-    ![register](screenshot/register.png)
+![register](screenshot/register.png)
 ###  Interfaz Prinicpal.
-    ![register](screenshot/UIinicial.png)
+![register](screenshot/UIinicial.png)
 ### Interfaz Metas.
-    ![register](screenshot/meta.png)
+![register](screenshot/meta.png)
 ### Interfaz Gastos.
-    ![register](screenshot/gastos.png)
+![register](screenshot/gastos.png)
  
 ## 🛠️ Tecnologías utilizadas
 
