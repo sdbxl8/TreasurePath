@@ -12,19 +12,17 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 
 ## 📸 Capturas de pantalla
 
-*Añade aquí tus capturas actualizadas del dashboard, gráficos y gestión de metas*
-
 ### Inicio de sesión.
-    ![loging](src/assets/screenshot/login.png) 
+    ![login](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/login.png) 
 ### Página de Registro.
-    ![register](src/assets/screenshot/register.png)
+    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/register.png)
 ###  Interfaz Prinicpal.
-    ![register](src/assets/screenshot/UIinicial.png)
+    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/UIinicial.png)
 ### Interfaz Metas.
-    ![register](src/assets/screenshot/meta.png)
+    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/meta.png)
 ### Interfaz Gastos.
-    ![register](src/assets/screenshot/gastos.png)
-es que 
+    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/gastos.png)
+ 
 ## 🛠️ Tecnologías utilizadas
 
 ### Frontend
