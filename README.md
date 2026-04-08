@@ -13,15 +13,15 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 ## 📸 Capturas de pantalla
 
 ### Inicio de sesión.
-    ![login](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/login.png) 
+    ![login](screenshot/login.png) 
 ### Página de Registro.
-    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/register.png)
+    ![register](screenshot/register.png)
 ###  Interfaz Prinicpal.
-    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/UIinicial.png)
+    ![register](screenshot/UIinicial.png)
 ### Interfaz Metas.
-    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/meta.png)
+    ![register](screenshot/meta.png)
 ### Interfaz Gastos.
-    ![register](https://github.com/sdbxl8/TreasurePath/raw/UI-Redesing/src/assets/screenshot/gastos.png)
+    ![register](screenshot/gastos.png)
  
 ## 🛠️ Tecnologías utilizadas
 
