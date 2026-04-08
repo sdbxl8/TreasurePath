@@ -23,8 +23,8 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 ### Interfaz Metas.
     ![register](src/assets/screenshot/meta.png)
 ### Interfaz Gastos.
-    ![register](src/assets/screenshot/gasto.png)
-
+    ![register](src/assets/screenshot/gastos.png)
+es que 
 ## 🛠️ Tecnologías utilizadas
 
 ### Frontend
