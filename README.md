@@ -14,8 +14,16 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 
 *Añade aquí tus capturas actualizadas del dashboard, gráficos y gestión de metas*
 
-* pantalla de inicio de sesión.
-    ![loging] (../../src/assets/screenshot/login.png) 
+### Inicio de sesión.
+    ![loging] (src/assets/screenshot/login.png) 
+### Página de Registro.
+    ![register] (src/assets/screenshot/register.png)
+###  Interfaz Prinicpal.
+    ![register] (src/assets/screenshot/UIinicial.png)
+### Interfaz Metas.
+    ![register] (src/assets/screenshot/meta.png)
+### Interfaz Gastos.
+    ![register] (src/assets/screenshot/gasto.png)
 
 ## 🛠️ Tecnologías utilizadas
 
