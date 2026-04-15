@@ -53,32 +53,24 @@ Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visua
 git clone https://github.com/sdbxl8/TreasurePath.git
 cd TreasurePath
 
-
-### 2. Cambiar a la rama de desarrollo (UI actual)
-
-
-git checkout ui-redisin
-
-### 3. Instalar dependencias
+### 2. Instalar dependencias
 
 
 npm install
 
 
-### 4. Configurar entorno local
+### 3. Configurar entorno local
 
 * Iniciar **Apache** y **MySQL** desde XAMPP
 * Acceder a **phpMyAdmin**
 
-
-
-### 5. Importar la base de datos
+### 4. Importar la base de datos
 
 * Importar el archivo:
 
 database/treasurepath.sql
 
-### 6. Ejecutar la aplicación
+### 5. Ejecutar la aplicación
 
 
 'npm run dev'
