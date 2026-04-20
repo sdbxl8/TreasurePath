@@ -2,6 +2,8 @@ import {ref,onMounted} from 'vue';
 import { useTotalGastos } from './useTotalGastos';
 
 export function useGasto(){
+
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
     const descripcion_gasto = ref<string>('');
     const cantidad_gasto = ref<number | null>(null);
     const gasto = ref<any[]>([]);
@@ -15,7 +17,7 @@ export function useGasto(){
         }
 
         try{
-            const response = await fetch('/api/incomeExpenses.php',{
+            const response = await fetch(`${apiUrl}/incomeExpenses.php`,{
                 method:'POST',
                 headers:{'Content-Type': 'application/json'},
                 credentials: 'include',
@@ -48,7 +50,7 @@ export function useGasto(){
     } 
     const cargarGastos = async () =>{
         try{
-            const response = await fetch('/api/getExpensesIncome.php',{
+            const response = await fetch(`${apiUrl}/getExpensesIncome.php`,{
                 method:'GET',
                 credentials:'include',
             });

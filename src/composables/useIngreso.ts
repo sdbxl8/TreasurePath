@@ -3,6 +3,7 @@ import { useTotalIngreso } from './useTotalIngreso';
 
 export function useIngreso(){
     
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
     const descripcion_ingreso = ref<string>('');
     const cantidad_ingreso = ref<number | null>(null);
     const ingreso = ref<any[]>([]);
@@ -16,7 +17,7 @@ export function useIngreso(){
         }
 
         try{
-            const response = await fetch('/api/incomeExpenses.php',{
+            const response = await fetch(`${apiUrl}/incomeExpenses.php`,{
                 method:'POST',
                 headers:{'Content-Type': 'application/json'},
                 credentials: 'include',
@@ -50,7 +51,7 @@ export function useIngreso(){
     } 
     const cargarIngreso = async () =>{
         try{
-            const response = await fetch('/api/getExpensesIncome.php',{
+            const response = await fetch(`${apiUrl}/getExpensesIncome.php`,{
                 method:'GET',
                 credentials:'include',
             });

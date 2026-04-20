@@ -5,6 +5,8 @@ import { useTotalIngreso } from './useTotalIngreso';
     
 
 export function usePorcentajeAhorro() {
+    
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
 
     const {totalGastos} = useTotalGastos(); 
 
@@ -20,7 +22,7 @@ export function usePorcentajeAhorro() {
 
     watch(porcentajeAhorro, async(nuevoValor)=>{
         try{
-            await fetch('/api/porcentajeAhorro.php',{
+            await fetch(`${apiUrl}/porcentajeAhorro.php`,{
                 method:'POST',
                 headers:{'Content-Type': 'application/json'},
                 credentials:'include',

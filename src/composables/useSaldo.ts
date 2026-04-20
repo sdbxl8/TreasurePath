@@ -4,14 +4,17 @@ import { usePopup } from './usePopup';
     const saldo = ref<number>(0);
     const newSaldo = ref<number>(0); 
 
+    
 
 export function useSaldo(){
+    
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
     const {togglePopup} = usePopup();
 
 
      const saldoInicial = async() =>{
         try{
-            const response = await fetch('/api/getSaldo.php',{
+            const response = await fetch(`${apiUrl}/getSaldo.php`,{
                 method:'GET',
                 headers: {'Content-Type': 'application/json'},
                 credentials:'include',
@@ -37,7 +40,7 @@ export function useSaldo(){
         }
 
         try{
-            const response = await fetch('/api/getSaldo.php',{
+            const response = await fetch(`${apiUrl}/getSaldo.php`,{
                 method: 'POST',
                 headers: {"Content-Type":"application/json"},
                 credentials: 'include',

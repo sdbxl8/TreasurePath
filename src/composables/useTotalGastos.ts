@@ -4,10 +4,11 @@ import {ref} from 'vue';
 
 export function useTotalGastos(){
 
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
 
     const cargarTotalGastos = async () =>{
         try{
-            const response = await fetch('/api/totalGastos.php',{
+            const response = await fetch(`${apiUrl}/totalGastos.php`,{
                 method: 'GET',
                 headers: {'Content-Type':'application/json'},
                 credentials: 'include',

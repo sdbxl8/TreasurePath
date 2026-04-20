@@ -3,10 +3,11 @@ import { useRouter } from 'vue-router'
 
 export function useLogOut(){
     const router = useRouter();
-    
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+
     const logOut = async () =>{
     try{
-        const response = await fetch('/api/sessionOut.php',{
+        const response = await fetch(`${apiUrl}/sessionOut.php`,{
             method: 'POST',
             credentials: 'include'
         })
@@ -28,7 +29,7 @@ export function useLogOut(){
     const nombreUsuario = ref<string>('');
 
     onMounted ( async () =>{
-        const response = await fetch('/api/verifySession.php', {
+        const response = await fetch(`${apiUrl}/verifySession.php`, {
         method: 'POST',
         credentials: 'include'
     })

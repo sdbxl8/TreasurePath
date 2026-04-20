@@ -3,6 +3,8 @@ import {reactive} from "vue";
 import type { LoggingData } from '../interfaces/logginData';
 
     export function useLogging(){
+
+        const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
         const loggingData = reactive<LoggingData>({
         nombre_usuario:'',
         contraseña:''
@@ -10,7 +12,7 @@ import type { LoggingData } from '../interfaces/logginData';
         const logUsuario = async() => {
         try{
             console.log(JSON.stringify(loggingData))
-            const response = await fetch('/api/logging.php',{
+            const response = await fetch(`${apiUrl}/logging.php`,{
                 method: 'POST',
                 headers: {'Content-Type':'application/json'},
                 credentials : 'include',

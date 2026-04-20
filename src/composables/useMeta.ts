@@ -4,7 +4,7 @@ import { useTotalIngreso } from './useTotalIngreso';
 import type {Meta} from '../interfaces/meta';
 
 export function useMeta(){
-    
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
     const meta = ref<Meta[]>([]);
     const metaCompletada = ref<Meta[]>([]);
     const cargando = ref(false);
@@ -24,7 +24,7 @@ export function useMeta(){
     async function cargarMeta() {
         cargando.value = true
         try{
-             const response = await fetch('/api/meta.php',{
+             const response = await fetch(`${apiUrl}/meta.php`,{
                 method:'GET',
                 headers: {'Content-Type': 'application/json'},
                 credentials:'include',
@@ -77,7 +77,7 @@ export function useMeta(){
     async function completarMeta(metaId:number) {
         cargando.value = true
         try{
-             const response = await fetch('/api/meta.php',{
+             const response = await fetch(`${apiUrl}/meta.php`,{
                 method:'PUT',
                 headers: {'Content-Type': 'application/json'},
                 credentials:'include',
@@ -109,7 +109,7 @@ export function useMeta(){
         }
 
         try{
-            const response = await fetch('/api/meta.php',{
+            const response = await fetch(`${apiUrl}/meta.php`,{
                 method: 'POST',
                 headers: {"Content-Type":"application/json"},
                 credentials: 'include',

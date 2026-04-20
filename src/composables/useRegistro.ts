@@ -4,6 +4,7 @@
 
 
 export function useRegistro(){
+    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
 
     const registerData = reactive<RegisterData>({
         nombre:'',
@@ -14,7 +15,7 @@ export function useRegistro(){
 
     const registrarUsuario = async() => {
         try{
-            const response = await fetch('/api/register.php',{
+            const response = await fetch(`${apiUrl}/register.php`,{
                 method: 'POST',
                 headers: {'Content-Type':'application/json'},
                 body: JSON.stringify(registerData)
