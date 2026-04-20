@@ -1,4 +1,142 @@
-# 🏴‍☠️ TreasurePath
+# 💰 TreasurePath
+
+Aplicación web de gestión de finanzas personales orientada a usuarios principiantes. Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visual intuitiva.
+
+---
+
+## 🚀 Demo
+
+🎥 Demo en vídeo: *(añade aquí el enlace cuando lo subas)*
+🌐 Demo online: *Proceso de despliegue*
+
+---
+
+## 📸 Vista rápida
+
+### Inicio de sesión.
+![login](screenshot/login.png) 
+### Página de Registro.
+![register](screenshot/register.png)
+###  Interfaz Prinicpal.
+![register](screenshot/UIinicial.png)
+### Interfaz Metas.
+![register](screenshot/meta.png)
+### Interfaz Gastos.
+![register](screenshot/gastos.png)
+
+---
+
+## 🧩 Qué hace la aplicación
+
+* Registro e inicio de sesión de usuarios
+* Gestión de ingresos y gastos
+* Visualización de balance y estadísticas
+* Sistema de metas con seguimiento de progreso
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+**Frontend**
+
+* Vue 3
+* TypeScript
+* TailwindCSS
+* Vue Router
+* Chart.js
+
+**Backend**
+
+* PHP
+* MySQL
+
+**Herramientas**
+
+* Vite
+* XAMPP
+* MySQL Workbench
+* Visual Studio Code
+
+---
+
+## 💼 Habilidades demostradas
+
+* Desarrollo de SPA con Vue 3 y TypeScript
+* Diseño e implementación de API en PHP
+* Gestión de bases de datos relacionales (MySQL)
+* Implementación de autenticación de usuarios
+* Integración de gráficos dinámicos con Chart.js
+* Comunicación frontend-backend
+
+---
+
+## ⚙️ Instalación y uso
+
+1. Clonar el repositorio
+
+```bash
+git clone https://github.com/sdbxl8/TreasurePath.git
+cd TreasurePath
+```
+
+2. Instalar dependencias
+
+```bash
+npm install
+```
+
+3. Configurar entorno local
+
+* Iniciar Apache y MySQL desde XAMPP
+* Acceder a phpMyAdmin
+
+4. Importar la base de datos
+
+* Importar: `database/treasurepath.sql`
+
+5. Ejecutar la aplicación
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Estado del proyecto
+
+🚧 En desarrollo (rediseño de interfaz en progreso)
+✅ Versión funcional disponible en entorno local
+
+---
+
+## 🎯 Contexto del proyecto
+
+Este proyecto ha sido desarrollado como Trabajo de Fin de Grado (DAW), enfocado en la creación de una aplicación web completa que integra frontend, backend y base de datos.
+
+---
+
+## 🔮 Futuras mejoras
+
+* 🌐 Despliegue en servidor real
+* 📱 Adaptación a dispositivos móviles
+* 📊 Estadísticas avanzadas
+* ⚙️ Personalización de usuario
+* 🔗 Integración con servicios externos
+
+---
+
+## 👨‍💻 Autor
+
+Salvador Domínguez Bandera
+
+
+
+
+
+
+
+
+<!-- # 🏴‍☠️ TreasurePath
 
 **TreasurePath** es una aplicación web de gestión de finanzas personales orientada a usuarios principiantes.
 Permite registrar ingresos, gastos y metas de ahorro mediante una interfaz visual intuitiva con temática pirata.
@@ -138,4 +276,4 @@ Salvador Domínguez Bandera
 ## 📌 Estado del proyecto
 
 🚧 Proyecto en desarrollo (rediseño de interfaz en progreso)
-✅ Versión funcional disponible en entorno local
+✅ Versión funcional disponible en entorno local -->
