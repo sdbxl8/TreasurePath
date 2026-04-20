@@ -4,7 +4,7 @@ import type { LoggingData } from '../interfaces/logginData';
 
     export function useLogging(){
 
-        const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+        const apiUrl= "https://treasurepath.infinityfreeapp.com/server";
         const loggingData = reactive<LoggingData>({
         nombre_usuario:'',
         contraseña:''
@@ -14,7 +14,7 @@ import type { LoggingData } from '../interfaces/logginData';
             console.log(JSON.stringify(loggingData))
             const response = await fetch(`${apiUrl}/logging.php`,{
                 method: 'POST',
-                headers: {'Content-Type':'application/json'},
+                headers: {'Content-Type':'text/plain'},
                 credentials : 'include',
                 body: JSON.stringify(loggingData)
             })
