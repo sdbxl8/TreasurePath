@@ -14,7 +14,7 @@ import type { LoggingData } from '../interfaces/logginData';
             console.log(JSON.stringify(loggingData))
             const response = await fetch(`${apiUrl}/logging.php`,{
                 method: 'POST',
-                headers: {'Content-Type':'text/plain'},
+                headers: {'Content-Type':'application/json'},
                 credentials : 'include',
                 body: JSON.stringify(loggingData)
             })
