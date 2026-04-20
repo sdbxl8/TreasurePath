@@ -16,7 +16,8 @@ import type { LoggingData } from '../interfaces/logginData';
                 method: 'POST',
                 headers: {'Content-Type':'application/json'},
                 credentials : 'include',
-                body: JSON.stringify(loggingData)
+                // body: JSON.stringify(loggingData)
+                body: new URLSearchParams(loggingData),
             })
 
             const data = await response.json()
