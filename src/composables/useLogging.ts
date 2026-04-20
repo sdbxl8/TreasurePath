@@ -14,7 +14,10 @@ import type { LoggingData } from '../interfaces/logginData';
             console.log(JSON.stringify(loggingData))
             const response = await fetch(`${apiUrl}/logging.php`,{
                 method: 'POST',
-                headers: {'Content-Type':'application/json'},
+                // headers: {'Content-Type':'application/json'},
+                 headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
                 credentials : 'include',
                 // body: JSON.stringify(loggingData)
                 body: new URLSearchParams(loggingData),
