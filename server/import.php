@@ -1,4 +1,7 @@
 <?php
+
+header("Content-Type: application/json");
+
 $conexion = new mysqli(
     getenv("MYSQLHOST"),
     getenv("MYSQLUSER"),
@@ -7,11 +10,17 @@ $conexion = new mysqli(
     getenv("MYSQLPORT")
 );
 
-$sql = file_get_contents("../database/treasurepath.sql");
+if ($conexion->connect_error) {
+    die(json_encode(["status" => "error", "msg" => "conexion fallida"]));
+}
+
+$sql = file_get_contents("treasurepath.sql");
 
 if ($conexion->multi_query($sql)) {
-    echo "Importación correcta";
+    echo json_encode(["status" => "ok", "msg" => "importado correctamente"]);
 } else {
-    echo "Error: " . $conexion->error;
+    echo json_encode(["status" => "error", "msg" => $conexion->error]);
 }
+
+$conexion->close();
 ?>
