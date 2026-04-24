@@ -4,7 +4,7 @@ import {ref} from 'vue';
 
 export function useTotalGastos(){
 
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const cargarTotalGastos = async () =>{
         try{

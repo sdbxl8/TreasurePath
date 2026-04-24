@@ -4,7 +4,7 @@ import type { LoggingData } from '../interfaces/logginData';
 
     export function useLogging(){
 
-        const apiUrl= "https://treasurepath.infinityfreeapp.com/server";
+        const apiUrl = import.meta.env.VITE_API_URL;
         const loggingData = reactive<LoggingData>({
         nombre_usuario:'',
         contraseña:''

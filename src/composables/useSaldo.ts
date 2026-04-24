@@ -8,7 +8,7 @@ import { usePopup } from './usePopup';
 
 export function useSaldo(){
     
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
     const {togglePopup} = usePopup();
 
 

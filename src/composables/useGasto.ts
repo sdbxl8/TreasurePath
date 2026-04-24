@@ -3,7 +3,7 @@ import { useTotalGastos } from './useTotalGastos';
 
 export function useGasto(){
 
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
     const descripcion_gasto = ref<string>('');
     const cantidad_gasto = ref<number | null>(null);
     const gasto = ref<any[]>([]);

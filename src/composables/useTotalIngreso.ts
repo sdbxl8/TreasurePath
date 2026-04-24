@@ -4,7 +4,7 @@ import {ref} from 'vue';
 
 export function useTotalIngreso(){
     
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
     const cargarTotalIngreso = async () =>{
         try{
             const response = await fetch(`${apiUrl}/totalIngreso.php`,{

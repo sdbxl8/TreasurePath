@@ -3,7 +3,7 @@ import { useRouter } from 'vue-router'
 
 export function useLogOut(){
     const router = useRouter();
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const logOut = async () =>{
     try{

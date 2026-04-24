@@ -6,7 +6,7 @@ import { useTotalIngreso } from './useTotalIngreso';
 
 export function usePorcentajeAhorro() {
     
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const {totalGastos} = useTotalGastos(); 
 

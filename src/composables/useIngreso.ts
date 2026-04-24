@@ -3,7 +3,7 @@ import { useTotalIngreso } from './useTotalIngreso';
 
 export function useIngreso(){
     
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
     const descripcion_ingreso = ref<string>('');
     const cantidad_ingreso = ref<number | null>(null);
     const ingreso = ref<any[]>([]);

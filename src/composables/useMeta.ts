@@ -4,7 +4,7 @@ import { useTotalIngreso } from './useTotalIngreso';
 import type {Meta} from '../interfaces/meta';
 
 export function useMeta(){
-    const apiUrl= "https://TreasurePath.infinityfreeapp.com/server";
+    const apiUrl = import.meta.env.VITE_API_URL;
     const meta = ref<Meta[]>([]);
     const metaCompletada = ref<Meta[]>([]);
     const cargando = ref(false);
