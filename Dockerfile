@@ -1,9 +1,8 @@
 FROM php:8.2-apache
 
-# Limpiar y deshabilitar todos los MPM conflictivos
-RUN rm -f /etc/apache2/mods-enabled/mpm_*.load && \
-    rm -f /etc/apache2/mods-enabled/mpm_*.conf && \
-    a2enmod mpm_prefork
+# No forzar MPM, dejar el default (mpm_event)
+# Solo garantizar que esté habilitado
+RUN a2enmod mpm_event || true
 
 # Copiar archivos del backend
 COPY server/ /var/www/html/
