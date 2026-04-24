@@ -1,7 +1,12 @@
-FROM php:8.2-apache-bookworm
+FROM php:8.2-fpm
 
+# Instalar extensiones necesarias
+RUN docker-php-ext-install mysqli
+
+# Copiar archivos del backend
 COPY server/ /var/www/html/
 
-RUN a2enmod rewrite
+# Permisos
+RUN chown -R www-data:www-data /var/www/html
 
-EXPOSE 80
+EXPOSE 9000
