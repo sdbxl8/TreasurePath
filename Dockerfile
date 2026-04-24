@@ -1,12 +1,13 @@
 FROM php:8.2-apache
 
-# Forzar prefork y desactivar otros MPM
-RUN echo "LoadModule mpm_prefork_module /usr/lib/apache2/modules/mod_mpm_prefork.so" > /etc/apache2/mods-enabled/mpm_prefork.load \
- && rm -f /etc/apache2/mods-enabled/mpm_event.load \
- && rm -f /etc/apache2/mods-enabled/mpm_worker.load
+# Deshabilitar módulos MPM conflictivos y usar prefork
+RUN a2dismod mpm_event mpm_worker mpm_winnt 2>/dev/null || true && \
+    a2enmod mpm_prefork
 
+# Copiar archivos del backend
 COPY server/ /var/www/html/
 
+# Habilitar módulos necesarios
 RUN a2enmod rewrite
 
 EXPOSE 80
