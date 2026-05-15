@@ -19,3 +19,5 @@ ChartJS.register(
     BarElement,
     ChartDataLabels
 );
+
+// mysql://root:muyskWjqOLffrWvANjeldYoHoexZSxKC@hopper.proxy.rlwy.net:43608/railway
